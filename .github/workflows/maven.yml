@@ -4,7 +4,7 @@
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
-# documentation.
+# documentation. 
 
 name: Java CI with Maven
 
@@ -15,7 +15,7 @@ on:
 jobs:
   build:
 
-    runs-on: self hosted
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
@@ -26,4 +26,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml 
+      run: mvn -B package --file pom.xml
